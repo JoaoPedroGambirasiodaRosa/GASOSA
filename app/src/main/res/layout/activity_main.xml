@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/svTela1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtTitulo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:text="Conversor de Gasolina"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+        <LinearLayout
+            android:id="@+id/llResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitulo1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtresultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_500"
+                android:text="O preço final da gasolina é: "
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/txtPetro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/purple_500"
+                android:padding="5dp"
+                android:text="Parcela da petrobras: "
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ProgressBar
+                android:id="@+id/pbPetro"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp" />
+
+            <TextView
+                android:id="@+id/txtLucro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/purple_500"
+                android:padding="5dp"
+                android:text="Lucro da revenda: "
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ProgressBar
+                android:id="@+id/pbLucro"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp" />
+
+            <TextView
+                android:id="@+id/txtImposto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/purple_500"
+                android:padding="5dp"
+                android:text="Total de imposto: "
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ProgressBar
+                android:id="@+id/pbImposto"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtQuest1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llResultado"
+            android:layout_marginHorizontal="10dp"
+            android:text="Preço na refinaria: "
+            android:textColor="@color/purple_500"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etQuest1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuest1"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="number"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/txtQuest2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etQuest1"
+            android:layout_marginHorizontal="10dp"
+            android:text="Imposto estadual: "
+            android:textColor="@color/purple_500"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etQuest2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuest2"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="number"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuest2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="%"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/txtQuest3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etQuest2"
+            android:layout_marginHorizontal="10dp"
+            android:text="Imposto federal: "
+            android:textColor="@color/purple_500"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etQuest3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuest3"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="number"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuest3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="%"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtQuest4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etQuest3"
+            android:layout_marginHorizontal="10dp"
+            android:text="Porcentagem de etanol anidro: "
+            android:textColor="@color/purple_500"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etQuest4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuest4"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="number"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuest4"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="%"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtQuest5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etQuest4"
+            android:layout_marginHorizontal="10dp"
+            android:text="Porcentagem de lucro da revenda: "
+            android:textColor="@color/purple_500"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etQuest5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuest5"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="number"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuest5"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="%"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etQuest5"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="Calcular"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</ScrollView>
